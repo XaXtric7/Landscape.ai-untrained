@@ -24,6 +24,18 @@ This project enables you to:
 
 ---
 
+## 📷 Screenshots
+
+![Image](https://github.com/user-attachments/assets/6c55636b-ea50-4f82-8ac6-8412e1a269f4)
+
+![Image](https://github.com/user-attachments/assets/65363ada-a8be-49f1-be0f-88b56ebd2e73)
+
+![Image](https://github.com/user-attachments/assets/ade934ed-4807-40ea-b656-646e3cea51b2)
+
+![Image](https://github.com/user-attachments/assets/1222ebe3-2827-4518-b31a-9fb5ce22d4cd)
+
+![Image](https://github.com/user-attachments/assets/8a7e6c02-8bfa-47ef-9ec5-59257ecf2c3e)
+
 ## 🧠 How It Works
 
 ### 1. **Data Preparation**
