@@ -102,3 +102,92 @@ python inference.py
 cd src
 python train.py
 ```
+
+## 🐳 Docker Support
+
+### Build and Run in Docker
+
+```bash
+docker build -t segment_project_image .
+docker run --name segment_container -d segment_project_image
+```
+
+### Copy Outputs
+
+```bash
+docker cp segment_container:/segment_project/models ./models
+docker cp segment_container:/segment_project/logs ./logs
+docker cp segment_container:/segment_project/output ./output
+```
+
+### Cleanup
+
+```bash
+docker stop segment_container
+docker rm segment_container
+docker rmi segment_project_image
+
+```
+
+## 📁 Project Structure
+
+```bash
+├── config/
+│   └── config.yaml        # Configuration file (classes, model params)
+├── data/
+│   ├── train/
+│   ├── test/
+├── models/                # Pretrained weights
+├── output/
+│   ├── predicted_masks/   # .tif mask outputs
+│   ├── prediction_plots/  # .png visualizations
+├── logs/                  # Training and testing logs
+├── src/
+│   ├── train.py
+│   ├── test.py
+│   └── inference.py
+├── requirements.txt
+└── README.md
+
+```
+
+### 🔧 Technologies Used
+
+## 🧠 Deep Learning & Vision
+
+- PyTorch 2.0.1
+- torchvision 0.15.2
+- segmentation_models_pytorch 0.3.3
+- EfficientNet (efficientnet-pytorch)
+- timm (PyTorch Image Models)
+
+## 🧰 Image & Data Handling
+
+- OpenCV (opencv-python-headless)
+- patchify
+- scikit-image, scikit-learn
+- albumentations
+- tifffile, Pillow, NumPy
+
+## 📦 Utilities
+
+- PyYAML
+- tqdm
+- split-folders
+- filelock, joblib
+- pretrainedmodels
+- huggingface-hub
+
+## 📈 Loss and Optimization
+
+- Dice Loss
+- Adam Optimizer
+- LR Scheduler (PyTorch)
+
+## 🐳 Deployment
+
+- Docker
+
+## 📜 License
+
+This project is released under the MIT License.
